@@ -3,7 +3,7 @@ import random
 
 
 
-print("Welcome to the grid game!!!")
+print("Welcome to Cross the Road game!!!")
 
 while 1:
     player=raw_input("What is your name? ")
@@ -249,26 +249,26 @@ can_eat=10
 
 while 1:
 	print("You are currently in %s at position %d/%d" % (world[position_y][position_x][0], position_y, position_x))
-	action=raw_input("Move (north, south, east, west)? ")
-	if action == "north":
+	action=raw_input("Move (forward, backward, right, left)? ")
+	if action == "forward":
 		position_y=position_y-1
 		if position_y == -1:
 			print("YOU CAN NOT GO HERE!!!")
 			position_y=position_y+1
 		continue
-	if action == "south":
+	if action == "backward":
 		position_y=position_y+1
 		if position_y == max_y:
 			print("YOU CAN NOT GO HERE!!!")
 			position_y=position_y-1
 		continue
-	if action == "west":
+	if action == "left":
 		position_x=position_x-1
 		if position_x == -1:
 			print("YOU CAN NOT GO HERE!!!")
 			position_x=position_x+1
 		continue
-	if action == "east":
+	if action == "right":
 		position_x=position_x+1
 		if position_x == max_x:
 			print("YOU CAN NOT GO HERE!!!")
